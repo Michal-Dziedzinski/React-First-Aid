@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.6rem;
         font-family: 'Manjari', sans-serif;
         background-color: #F2F3F6;
-        padding-top: 2px;
+        padding-top: 0;
         padding-bottom: 15px;
     }
 `;
