@@ -52,9 +52,9 @@ const StyledItemText = styled.div`
   width: 70%;
 `;
 
-export const RewardsItem = ({ reward, isActive, setChosenItemId }) =>
+export const RewardsItem = ({ reward, isActive }) =>
   isActive ? (
-    <StyledItemActive onClick={() => setChosenItemId(reward.id)}>
+    <StyledItemActive>
       <StyledImageWrapper>
         <StyledImage src={require(`assets/${reward.image}.png`)} alt={reward.partner} />
       </StyledImageWrapper>
@@ -71,7 +71,7 @@ export const RewardsItem = ({ reward, isActive, setChosenItemId }) =>
       </StyledItemText>
     </StyledItemActive>
   ) : (
-    <StyledItem onClick={() => setChosenItemId(reward.id)}>
+    <StyledItem>
       <StyledImageWrapper>
         <StyledImage src={require(`assets/${reward.image}.png`)} alt={reward.partner} />
       </StyledImageWrapper>

@@ -9,7 +9,6 @@ const percentageSecond = 89;
 const StyledWrapper = styled.div`
   text-align: center;
   padding: 15px;
-  min-height: 100vh;
 `;
 
 const StyledLink = styled.a`
