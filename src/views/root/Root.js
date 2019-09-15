@@ -11,7 +11,7 @@ import { Rewards } from 'views/Rewards/Rewards';
 import BottomBtn from 'components/bottomBtn/BottomBtn';
 import Scan from 'views/scan/Scan';
 import Stats from 'views/stats/Stats';
-import Maps from 'views/maps/Maps';
+import { Maps } from 'views/maps/Maps';
 
 class Root extends Component {
   state = {
