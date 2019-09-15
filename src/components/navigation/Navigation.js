@@ -8,6 +8,8 @@ const StyledNav = styled.ul`
   align-items: center;
   justify-content: space-between;
   padding: 15px 25px;
+  position: relative;
+  z-index: 3;
 `;
 
 const Navigation = () => {
