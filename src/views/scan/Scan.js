@@ -1,16 +1,37 @@
 import React, { Component } from 'react';
 import QrReader from 'react-qr-reader';
+import styled from 'styled-components';
+
+const StyledResult = styled.p`
+  font-family: 'Karla', sans-serif;
+  color: ${({ theme }) => theme.colorPrimary};
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.4rem;
+`;
+
+const StyledText = styled.p`
+  font-family: 'Karla', sans-serif;
+  color: ${({ theme }) => theme.colorPrimary};
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.4rem;
+`;
 
 class Scan extends Component {
   state = {
-    result: 'No result',
+    result: 0,
   };
 
   handleScan = data => {
+    const { addGrabbs } = this.props;
     if (data) {
       this.setState({
         result: data,
       });
+      addGrabbs(data);
     }
   };
 
@@ -28,7 +49,11 @@ class Scan extends Component {
           onScan={this.handleScan}
           style={{ width: '100%' }}
         />
-        <p>{result}</p>
+        {result === 0 ? (
+          <StyledText>Scan QR code</StyledText>
+        ) : (
+          <StyledResult>You get {result} Grabbs</StyledResult>
+        )}
       </div>
     );
   }

@@ -14,7 +14,7 @@ const Navigation = () => {
   return (
     <nav>
       <StyledNav>
-        <NavigationItem name="MAIN!" link="/main" />
+        <NavigationItem name="MAIN!" link="/" />
         <NavigationItem name="STATS" link="/stats" />
         <NavigationItem name="REWARDS" link="/rewards" />
         <NavigationItem name="GRABBOMATS" link="/maps" />

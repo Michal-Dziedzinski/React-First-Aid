@@ -106,17 +106,17 @@ const Stats = () => (
       / <StyledLink href="">Lokal</StyledLink>
       <StyledRatingWrapper>
         <StyledRow>
-          <StyledCol>1. Imie nazwisko</StyledCol>
+          <StyledCol>1. John Smith</StyledCol>
           <StyledCol>-</StyledCol>
           <StyledCol>1234 Grabs</StyledCol>
         </StyledRow>
         <StyledRow>
-          <StyledCol>2. Imie nazwisko</StyledCol>
+          <StyledCol>2. Johnny Smith</StyledCol>
           <StyledCol>-</StyledCol>
           <StyledCol>1233 Grabs</StyledCol>
         </StyledRow>
         <StyledRow>
-          <StyledCol>3. Imie nazwisko</StyledCol>
+          <StyledCol>3. Jonathan Smith</StyledCol>
           <StyledCol>-</StyledCol>
           <StyledCol>1232 Grabs</StyledCol>
         </StyledRow>
