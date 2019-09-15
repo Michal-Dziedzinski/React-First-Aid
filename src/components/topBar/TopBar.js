@@ -38,10 +38,11 @@ const Line2 = styled.div`
   background-color: ${({ theme }) => theme.colorWhite};
 `;
 
-const TopBar = () => {
+const TopBar = props => {
+  const { points } = props;
   return (
     <Wrapper>
-      <Text>15 GRABS</Text>
+      <Text>{points} GRABS</Text>
       <Button>
         <Line1 />
         <Line2 />

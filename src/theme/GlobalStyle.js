@@ -19,9 +19,10 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-size: 1.6rem;
         font-family: 'Manjari', sans-serif;
-        background-color: #F2F3F6;
+        background-color: #ffffff;
         padding-top: 0;
         padding-bottom: 15px;
+        padding-bottom: 40px;
     }
 `;
 
