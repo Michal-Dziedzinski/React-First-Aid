@@ -6,7 +6,7 @@ import { theme } from 'theme/MainTheme';
 import TopBar from 'components/topBar/TopBar';
 import Navigation from 'components/navigation/Navigation';
 import Main from 'views/main/Main';
-import Rewards from 'views/Rewards/Rewards';
+import { Rewards } from 'views/Rewards/Rewards';
 import Scan from 'views/scan/Scan';
 
 const rewards = [
@@ -15,55 +15,60 @@ const rewards = [
     name: 'Greek Salad -50%',
     price: 20,
     partner: 'Kathys Restaurant',
-    addres: {
+    address: {
       city: 'Białystok',
       street: 'Warszawska 11',
     },
     type: 'food',
+    image: 'salad',
   },
   {
     id: 2,
     name: 'Free Burger',
     price: 150,
     partner: 'McRoland',
-    addres: {
+    address: {
       city: 'Suchowola',
       street: 'Szklana 16',
     },
     type: 'food',
+    image: 'burger',
   },
   {
     id: 3,
     name: 'Cinema ticket -20%',
     price: 10,
     partner: 'CinemaTown',
-    addres: {
+    address: {
       city: 'Suchowola',
       street: 'Szklana 16',
     },
     type: 'services',
+    image: 'cinema',
   },
   {
     id: 4,
     name: 'Bus ticket',
     price: 20,
     partner: 'MPK Białystok',
-    addres: {
+    address: {
       city: 'Białystok',
       street: 'Abramova 160',
     },
     type: 'items',
+    image: 'bus',
   },
   {
     id: 5,
     name: 'Barber -50%',
     price: 20,
     partner: 'Barber sp. z o.o.',
-    addres: {
+    address: {
       city: 'Białystok',
       street: 'Szesnastego 16',
     },
     type: 'services',
+    image: 'barber',
   },
 ];
 

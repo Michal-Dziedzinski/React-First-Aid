@@ -1,22 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import RewardsItem from 'views/Rewards/RewardsItem';
+import { RewardsItem } from 'views/Rewards/RewardsItem';
 
 const StyledList = styled.div`
-  display: inline-block;
-  border-radius: 3px;
-  padding: 0.5rem 0;
-  margin: 0.5rem 1rem;
-  width: 11rem;
-  background: transparent;
-  color: white;
-  border: 2px solid white;
+  width: 100%;
+  margin-bottom: 20px;
 `;
 
-export const RewardsList = ({ products }) => (
+export const RewardsList = ({ rewards }) => (
   <StyledList>
-    {products.map(product => (
-      <RewardsItem product={product} />
+    {rewards.map(reward => (
+      <RewardsItem reward={reward} key={reward.id} />
     ))}
   </StyledList>
 );
