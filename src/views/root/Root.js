@@ -16,6 +16,8 @@ import Maps from 'views/maps/Maps';
 class Root extends Component {
   state = {
     points: 15,
+    chosenItemId: null,
+    wishItemId: null,
     rewards: [
       {
         id: 1,
@@ -88,8 +90,20 @@ class Root extends Component {
     });
   };
 
+  setChosenItemId = id => {
+    this.setState({
+      chosenItemId: id,
+    });
+  };
+
+  setWishItemId = id => {
+    this.setState({
+      wishItemId: id,
+    });
+  };
+
   render() {
-    const { points, rewards } = this.state;
+    const { points, rewards, chosenItemId, wishItemId } = this.state;
     const progress = ((points * 1) / rewards) * 1;
     return (
       <div className="Root">
@@ -107,7 +121,18 @@ class Root extends Component {
                   path="/"
                   render={() => <Main points={points} price="20" progress={progress} />}
                 />
-                <Route path="/rewards" render={() => <Rewards rewards={rewards} />} />
+                <Route
+                  path="/rewards"
+                  render={() => (
+                    <Rewards
+                      rewards={rewards}
+                      chosenItemId={chosenItemId}
+                      wishItemId={wishItemId}
+                      setChosenItemId={this.chosenItemId}
+                      setWishItemId={this.wishItemId}
+                    />
+                  )}
+                />
                 <Route path="/stats" component={Stats} />
                 <Route path="/maps" render={() => <Maps />} />
               </Switch>

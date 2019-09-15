@@ -15,10 +15,13 @@ const StyledItem = styled.div`
 const StyledItemActive = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.colorMain};
-  color: ${({ theme }) => theme.colorWhite};
+  color: ${({ theme }) => theme.colorPrimary};
   padding: 10px;
   border-top: 1px solid ${({ theme }) => theme.colorPrimary};
   margin: 0 20px;
+  ${StyledItemGrabs} {
+    color: ${({ theme }) => theme.colorWhite};
+  }
 `;
 const StyledImage = styled.img`
   height: 50px;
@@ -49,9 +52,9 @@ const StyledItemText = styled.div`
   width: 70%;
 `;
 
-export const RewardsItem = ({ reward, active }) =>
-  active ? (
-    <StyledItemActive>
+export const RewardsItem = ({ reward, isActive, setChosenItemId }) =>
+  isActive ? (
+    <StyledItemActive onClick={() => setChosenItemId(reward.id)}>
       <StyledImageWrapper>
         <StyledImage src={require(`assets/${reward.image}.png`)} alt={reward.partner} />
       </StyledImageWrapper>
@@ -68,7 +71,7 @@ export const RewardsItem = ({ reward, active }) =>
       </StyledItemText>
     </StyledItemActive>
   ) : (
-    <StyledItem>
+    <StyledItem onClick={() => setChosenItemId(reward.id)}>
       <StyledImageWrapper>
         <StyledImage src={require(`assets/${reward.image}.png`)} alt={reward.partner} />
       </StyledImageWrapper>

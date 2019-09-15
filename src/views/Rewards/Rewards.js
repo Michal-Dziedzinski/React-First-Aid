@@ -9,9 +9,15 @@ const StyledRewards = styled.div`
   align-items: center;
 `;
 
-export const Rewards = ({ rewards }) => (
+export const Rewards = ({ rewards, chosenItemId, wishItemId, setWishItemId, setChosenItemId }) => (
   <StyledRewards>
-    <RewardsList rewards={rewards} />
+    <RewardsList
+      rewards={rewards}
+      chosenItemId={chosenItemId}
+      wishItemId={wishItemId}
+      setChosenItemId={setChosenItemId}
+      setWishItemId={setWishItemId}
+    />
     <Button>Grab your reward!</Button>
   </StyledRewards>
 );

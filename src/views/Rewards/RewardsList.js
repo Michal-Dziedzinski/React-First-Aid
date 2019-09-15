@@ -7,10 +7,23 @@ const StyledList = styled.div`
   margin-bottom: 20px;
 `;
 
-export const RewardsList = ({ rewards }) => (
+export const RewardsList = ({
+  rewards,
+  chosenItemId,
+  wishItemId,
+  setChosenItemId,
+  setWishItemId,
+}) => (
   <StyledList>
     {rewards.map(reward => (
-      <RewardsItem reward={reward} key={reward.id} />
+      <RewardsItem
+        reward={reward}
+        key={reward.id}
+        isActive={reward.id === chosenItemId}
+        isWished={reward.id === wishItemId}
+        setChosenItemId={setChosenItemId}
+        setWishItemId={setWishItemId}
+      />
     ))}
   </StyledList>
 );
