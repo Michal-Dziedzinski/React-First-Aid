@@ -12,7 +12,7 @@ const StyledWrapper = styled.div`
   min-height: 100vh;
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled.span`
   text-decoration: none;
   text-transform: uppercase;
   color: ${({ theme }) => theme.colorPrimary};
@@ -112,10 +112,7 @@ const StyledCircleWrapper = styled.div`
 const Stats = () => (
   <>
     <StyledWrapper>
-      <StyledLink className="active" href="">
-        Global
-      </StyledLink>
-      / <StyledLink href="">Lokal</StyledLink>
+      <StyledLink className="active">Global</StyledLink>/ <StyledLink>Lokal</StyledLink>
       <StyledRatingWrapper>
         <StyledRow>
           <StyledCol>1. John Smith</StyledCol>
