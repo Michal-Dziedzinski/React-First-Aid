@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'theme/GlobalStyle';
 import { theme } from 'theme/MainTheme';
 import TopBar from 'components/topBar/TopBar';
+import Background from 'components/background/Background';
 import Navigation from 'components/navigation/Navigation';
 import Main from 'views/main/Main';
 import Rewards from 'views/Rewards/Rewards';
+import BottomBtn from 'components/bottomBtn/BottomBtn';
 import Scan from 'views/scan/Scan';
 
 const rewards = [
@@ -67,23 +69,34 @@ const rewards = [
   },
 ];
 
-const Root = () => (
-  <div className="Root">
-    <GlobalStyle />
-    <ThemeProvider theme={theme}>
-      <>
-        <TopBar />
-        <BrowserRouter>
-          <Navigation />
-          <Switch>
-            <Route exact path="/" component={Scan} />
-            <Route path="/main" render={() => <Main />} />
-            <Route path="/rewards" render={() => <Rewards rewards={rewards} />} />
-          </Switch>
-        </BrowserRouter>
-      </>
-    </ThemeProvider>
-  </div>
-);
+class Root extends Component {
+  state = {
+    points: 15,
+  };
+
+  render() {
+    const { points } = this.state;
+    return (
+      <div className="Root">
+        <GlobalStyle />
+        <ThemeProvider theme={theme}>
+          <>
+            <TopBar points={points} />
+            <Background />
+            <BrowserRouter>
+              <Navigation />
+              <Switch>
+                <Route exact path="/" component={Scan} />
+                <Route path="/main" render={() => <Main points={points} />} />
+                <Route path="/rewards" render={() => <Rewards rewards={rewards} />} />
+              </Switch>
+            </BrowserRouter>
+            <BottomBtn />
+          </>
+        </ThemeProvider>
+      </div>
+    );
+  }
+}
 
 export default Root;
