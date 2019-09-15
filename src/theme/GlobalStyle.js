@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
         background-color: #ffffff;
         padding-top: 0;
         padding-bottom: 15px;
-        padding-bottom: 40px;
+        padding-bottom: 100px;
     }
 `;
 
