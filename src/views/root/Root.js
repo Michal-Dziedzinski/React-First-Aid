@@ -7,6 +7,8 @@ import TopBar from 'components/topBar/TopBar';
 import Navigation from 'components/navigation/Navigation';
 import Main from 'views/main/Main';
 import Scan from 'views/scan/Scan';
+import Stats from 'views/stats/Stats';
+import Maps from 'views/maps/Maps';
 
 const Root = () => (
   <div className="Root">
@@ -19,6 +21,8 @@ const Root = () => (
           <Switch>
             <Route exact path="/" component={Scan} />
             <Route path="/main" render={() => <Main />} />
+            <Route path="/maps" component={Maps} />
+            <Route path="/stats" component={Stats} />
           </Switch>
         </BrowserRouter>
       </>
