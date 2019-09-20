@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[<img src="https://lh4.googleusercontent.com/FwZL7158CJOHq0UuBQoTS5fIM7fUoEury1g_CR5dfnPPwMNTv7VfKRQezVUedthXAQQfPSkMmE7zRWywh_bY=w958-h874-rw" alt="grabber">](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing)
 
-## Available Scripts
+# Welcome to Grabber App!
 
-In the project directory, you can run:
+The grabber application was created as our idea during the **HackYeah 2019** Hackathon. You can read more about the task we undertook [here](https://hackyeah.pl/wp-content/uploads/2019/09/PMI-zadanie-szczegolowe.pdf)
 
-### `npm start`
+## What is the idea for the application?
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can read more about our application in the presentation we have prepared [here](https://drive.google.com/file/d/1X7DognJLUNI5g0sQ2Xv_ekAPcIa4FYbB/view?usp=sharing)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+In [this](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing) video you can see how John, Katie and all other people can benefit from using the Grabber app:
 
-### `npm test`
+[<img src="https://lh4.googleusercontent.com/FwZL7158CJOHq0UuBQoTS5fIM7fUoEury1g_CR5dfnPPwMNTv7VfKRQezVUedthXAQQfPSkMmE7zRWywh_bY=w958-h874-rw" alt="grabber">](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How can I check the idea?
 
-### `npm run build`
+[Here](https://xenodochial-bassi-8f6219.netlify.com/) is the link to the application. **Important!** The application is at a very early stage of development, currently it is rather a mock-up. **Only the mobile view has been prepared!**
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://lh5.googleusercontent.com/eFkwcKqsrBkcZMSHAM3QH3OXAswZTA1VG7TRdzfQYUpljwNpv6cQZuVz1N2C3hdpb56JgQg3vCC2vmT-Hc57=w958-h874" alt="Grabber app"/>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+<img src="https://lh4.googleusercontent.com/mNv4plq2pmfk50t3bG48-UQ3oTtNSV1tfve2E9WLMUyQbhr3mwaGOd64NVBRaUrWu7wUu6WCDNXSGQ=w958-h922" alt="Grabber app"/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<img src="https://lh4.googleusercontent.com/-9O1fVeQ2nGPmZXRaI-GaFX_NwUn-HodIxVIiEYhBbUvH_g6A6kE6Rb1sGQ3Yfo5hw80s-vFc-8P-w=w958-h922" alt="Grabber app"/>
