@@ -1,4 +1,4 @@
-[<img src="https://lh4.googleusercontent.com/FwZL7158CJOHq0UuBQoTS5fIM7fUoEury1g_CR5dfnPPwMNTv7VfKRQezVUedthXAQQfPSkMmE7zRWywh_bY=w958-h874-rw" alt="grabber">](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing)
+<img src="https://drive.google.com/uc?export=view&id=1sjKrZyMiANmW3XSufcr9v9g_LE6aPaOe" alt="Grabber app"/>
 
 # Welcome to Grabber App!
 
@@ -10,14 +10,14 @@ You can read more about our application in the presentation we have prepared [he
 
 In [this](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing) video you can see how John, Katie and all other people can benefit from using the Grabber app:
 
-[<img src="https://lh4.googleusercontent.com/FwZL7158CJOHq0UuBQoTS5fIM7fUoEury1g_CR5dfnPPwMNTv7VfKRQezVUedthXAQQfPSkMmE7zRWywh_bY=w958-h874-rw" alt="grabber">](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing)
+[<img src="https://drive.google.com/uc?export=view&id=1sjKrZyMiANmW3XSufcr9v9g_LE6aPaOe" alt="grabber">](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing)
 
 ## How can I check the idea?
 
 [Here](https://xenodochial-bassi-8f6219.netlify.com/) is the link to the application. **Important!** The application is at a very early stage of development, currently it is rather a mock-up. **Only the mobile view has been prepared!**
 
-<img src="https://lh5.googleusercontent.com/eFkwcKqsrBkcZMSHAM3QH3OXAswZTA1VG7TRdzfQYUpljwNpv6cQZuVz1N2C3hdpb56JgQg3vCC2vmT-Hc57=w958-h874" alt="Grabber app"/>
+<img src="https://drive.google.com/uc?export=view&id=1LOUzCB46SyEvXsGsKepPRlj9dTDWrchJ" alt="Grabber app"/>
 
-<img src="https://lh4.googleusercontent.com/mNv4plq2pmfk50t3bG48-UQ3oTtNSV1tfve2E9WLMUyQbhr3mwaGOd64NVBRaUrWu7wUu6WCDNXSGQ=w958-h922" alt="Grabber app"/>
+<img src="https://drive.google.com/uc?export=view&id=1YzEwGfnpe5YOGbliGL5FItvGErETWh6M" alt="Grabber app"/>
 
-<img src="https://lh4.googleusercontent.com/-9O1fVeQ2nGPmZXRaI-GaFX_NwUn-HodIxVIiEYhBbUvH_g6A6kE6Rb1sGQ3Yfo5hw80s-vFc-8P-w=w958-h922" alt="Grabber app"/>
+<img src="https://drive.google.com/uc?export=view&id=1Cb5Z0rBSj9aEHbiF-rUbF1UdwZ1SmQjW" alt="Grabber app"/>
