@@ -13,7 +13,6 @@ const Title = styled.h4`
 const StyledContainer = styled.div`
   padding-right: 15px;
   padding-left: 15px;
-  padding-top: 40px;
 `;
 
 const StyledProduct = styled.div`
@@ -86,7 +85,7 @@ const Main = props => {
   const { points, price } = props;
   return (
     <StyledContainer>
-      <Title>YOUR FAVOURITE REWARD PROGRESS</Title>
+      <Title>YOUR FAVORITE REWARD PROGRESS</Title>
       <StyledProduct>
         <StyledProductImg src={product} />
         <StyledDiscount>-50%</StyledDiscount>

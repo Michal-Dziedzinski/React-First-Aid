@@ -8,7 +8,7 @@ const percentageSecond = 89;
 
 const StyledWrapper = styled.div`
   text-align: center;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
 `;
 
 const StyledLink = styled.span`
@@ -131,7 +131,7 @@ const Stats = () => (
         <StyledRow>
           <StyledCol>110. You</StyledCol>
           <StyledCol>-</StyledCol>
-          <StyledCol color>932 Grabs</StyledCol>
+          <StyledCol>932 Grabs</StyledCol>
         </StyledRow>
       </StyledRatingWrapper>
       <StyledPanelWrapper>
