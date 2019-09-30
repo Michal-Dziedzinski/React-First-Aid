@@ -10,7 +10,6 @@ const StyledItem = styled.div`
   background-color: ${({ theme }) => theme.colorWhite};
   padding: 10px 10px 10px 0;
   border-top: 1px solid ${({ theme }) => theme.colorPrimary};
-  margin: 0 20px;
 `;
 const StyledItemActive = styled.div`
   display: flex;
@@ -18,7 +17,6 @@ const StyledItemActive = styled.div`
   color: ${({ theme }) => theme.colorPrimary};
   padding: 10px;
   border-top: 1px solid ${({ theme }) => theme.colorPrimary};
-  margin: 0 20px;
   ${StyledItemGrabs} {
     color: ${({ theme }) => theme.colorWhite};
   }
@@ -52,15 +50,17 @@ const StyledItemText = styled.div`
   width: 70%;
 `;
 
-export const RewardsItem = ({ reward, isActive }) =>
-  isActive ? (
+export const RewardsItem = ({ reward, chosenReward, setChosenReward }) =>
+  reward.id === (chosenReward ? chosenReward.id : undefined) ? (
     <StyledItemActive>
       <StyledImageWrapper>
         <StyledImage src={require(`assets/${reward.image}.png`)} alt={reward.partner} />
       </StyledImageWrapper>
       <StyledItemText>
         <StyledItemHeader>
-          <StyledItemName>{reward.name}</StyledItemName>
+          <StyledItemName>
+            {reward.reward} {reward.name}
+          </StyledItemName>
           <StyledItemGrabs>{reward.price} GRABS</StyledItemGrabs>
         </StyledItemHeader>
         <StyledItemInfo />
@@ -71,13 +71,15 @@ export const RewardsItem = ({ reward, isActive }) =>
       </StyledItemText>
     </StyledItemActive>
   ) : (
-    <StyledItem>
+    <StyledItem onClick={() => setChosenReward(reward)}>
       <StyledImageWrapper>
         <StyledImage src={require(`assets/${reward.image}.png`)} alt={reward.partner} />
       </StyledImageWrapper>
       <StyledItemText>
         <StyledItemHeader>
-          <StyledItemName>{reward.name}</StyledItemName>
+          <StyledItemName>
+            {reward.reward} {reward.name}
+          </StyledItemName>
           <StyledItemGrabs>{reward.price} GRABS</StyledItemGrabs>
         </StyledItemHeader>
         <StyledItemInfo />

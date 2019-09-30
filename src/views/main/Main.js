@@ -1,19 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
-import product from 'assets/salad.png';
+import { Button } from 'components/button/Button';
+import { NavLink } from 'react-router-dom';
 
-const Title = styled.h4`
+const Title = styled.h1`
   font-family: 'Karla', sans-serif;
   color: ${({ theme }) => theme.colorPrimary};
   font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
+  font-size: 24px;
+`;
+const StyledRewardName = styled.h2`
+  font-family: 'Karla', sans-serif;
+  color: ${({ theme }) => theme.colorPrimary};
+  text-align: center;
+  font-size: 22px;
+  padding: 10px 0;
 `;
 
 const StyledContainer = styled.div`
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+`;
+const StyledLink = styled(NavLink)`
+  width: 100%;
+  text-align: center;
 `;
 
 const StyledProduct = styled.div`
@@ -23,7 +40,8 @@ const StyledProduct = styled.div`
 
 const StyledProductImg = styled.img`
   display: block;
-  width: 90%;
+  width: auto;
+  max-height: 260px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -70,7 +88,7 @@ const StyledProgressBar = styled.div`
     );
     border-radius: 15px;
     transform-origin: left;
-    transform: scaleX(0.75);
+    transform: scaleX(${({ points, price }) => points / price});
   }
 `;
 
@@ -83,18 +101,35 @@ const StyledPoints = styled.p`
 `;
 
 const Main = props => {
-  const { points, price } = props;
+  const { points, reward } = props;
   return (
     <StyledContainer>
-      <Title>YOUR FAVOURITE REWARD PROGRESS</Title>
-      <StyledProduct>
-        <StyledProductImg src={product} />
-        <StyledDiscount>-50%</StyledDiscount>
-      </StyledProduct>
-      <StyledProgressBar />
-      <StyledPoints>
-        {points}/{price}
-      </StyledPoints>
+      {reward ? (
+        <>
+          {' '}
+          <Title>YOUR MOST WANTED REWARD PROGRESS</Title>
+          <StyledProduct>
+            <StyledProductImg src={require(`assets/${reward.image}.png`)} />
+            <StyledDiscount>{reward.reward}</StyledDiscount>
+          </StyledProduct>
+          <StyledRewardName>{reward.name}</StyledRewardName>
+          {reward.price >= points ? (
+            <StyledProgressBar points={points} price={reward.price} />
+          ) : (
+            <Button>Grab your reward!</Button>
+          )}
+          <StyledPoints>
+            {points}/{reward.price}
+          </StyledPoints>{' '}
+        </>
+      ) : (
+        <>
+          <Title>Choose the reward you want to get!</Title>
+          <StyledLink to="/rewards">
+            <Button>Chose Your reward</Button>
+          </StyledLink>
+        </>
+      )}
     </StyledContainer>
   );
 };

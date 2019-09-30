@@ -19,6 +19,13 @@
       {
         "extensions": [".js"]
       }
+    ],
+    "react/destructuring-assignment": [
+      "error",
+      "always",
+      {
+        "ignoreClassFields": true
+      }
     ]
   },
   "settings": {

@@ -12,6 +12,7 @@ const StyleButton = styled.button`
   width: 80%;
   border-radius: 25px;
   padding: 20px 0;
+  margin: 10px 0;
   text-transform: uppercase;
   font-family: inherit;
   font-size: 18px;
@@ -24,8 +25,16 @@ const StyleButton = styled.button`
       ${({ theme }) => theme.colorMain} 100%
     );
   }
+  &:disabled {
+    background-image: none;
+    background-color: ${({ theme }) => theme.colorInactive};
+  }
 `;
 
-export const Button = ({ children }) => {
-  return <StyleButton>{children}</StyleButton>;
+export const Button = ({ children, disabled, onClick }) => {
+  return (
+    <StyleButton onClick={() => (onClick ? onClick() : null)} disabled={disabled}>
+      {children}
+    </StyleButton>
+  );
 };
