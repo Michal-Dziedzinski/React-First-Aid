@@ -10,6 +10,10 @@ const StyledNav = styled.ul`
   padding: 15px 25px 55px 25px;
   position: relative;
   z-index: 3;
+  position: fixed;
+  top: 54px;
+  width: 100%;
+  background-color: #fff;
 `;
 
 const Navigation = () => {
