@@ -10,13 +10,34 @@ const StyledLink = styled(NavLink)`
   font-weight: 700;
   line-height: 1;
   padding-bottom: 2px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    /* width: 0; */
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: red;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+  }
+  &.navActive {
+    &::after {
+      transform: scaleX(1);
+      transform-origin: left;
+      left: 0;
+      background: ${({ theme }) => theme.colorMain};
+    }
+  }
 `;
 
 const NavigationItem = props => {
   const { name, link } = props;
   return (
     <li>
-      <StyledLink activeClassName="navActive" to={link}>
+      <StyledLink exact activeClassName="navActive" to={link}>
         {name}
       </StyledLink>
     </li>
