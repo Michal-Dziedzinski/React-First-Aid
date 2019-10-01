@@ -7,7 +7,7 @@ const StyledNav = styled.ul`
   list-style: none;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 25px;
+  padding: 15px 25px 55px 25px;
   position: relative;
   z-index: 3;
   position: fixed;
