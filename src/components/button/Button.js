@@ -15,7 +15,7 @@ const StyleButton = styled.button`
   margin: 10px 0;
   text-transform: uppercase;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 900;
   cursor: pointer;
   &:hover {

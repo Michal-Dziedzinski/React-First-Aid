@@ -4,7 +4,7 @@ import logo from 'assets/logo-dark.png';
 
 const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colorMain};
-  padding: 20px 45px;
+  padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -14,6 +14,9 @@ const StyledNav = styled.ul`
   top: 54px;
   width: 100%;
   background-color: #fff;
+  @media only screen and (min-width: 768px) {
+    justify-content: space-around;
+  }
 `;
 
 const Navigation = () => {

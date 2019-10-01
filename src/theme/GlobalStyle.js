@@ -13,7 +13,16 @@ const GlobalStyle = createGlobalStyle`
     }
 
     html {
-        font-size: 62.5%;
+      font-size: 62.5%;
+      @media only screen and (min-width: 768px) {
+        font-size: 68.75%;
+      }
+      @media only screen and (min-width: 1024px) {
+        font-size: 75%;
+      }
+      @media only screen and (min-width: 1200px) {
+        font-size: 87.5%;
+      }
     }
 
     body {

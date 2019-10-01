@@ -9,8 +9,11 @@ const StyledLink = styled(NavLink)`
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1;
-  padding-bottom: 2px;
   position: relative;
+  padding-bottom: 0.2rem;
+  @media only screen and (min-width: 768px) {
+    justify-content: space-around;
+  }
   &::after {
     content: '';
     position: absolute;

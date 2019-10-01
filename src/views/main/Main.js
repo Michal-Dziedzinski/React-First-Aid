@@ -45,6 +45,9 @@ const StyledProductImg = styled.img`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  @media only screen and (min-width: 768px) {
+    width: 720px;
+  }
 `;
 
 const StyledDiscount = styled.span`
@@ -89,6 +92,9 @@ const StyledProgressBar = styled.div`
     border-radius: 15px;
     transform-origin: left;
     transform: scaleX(${({ points, price }) => points / price});
+  }
+  @media only screen and (min-width: 768px) {
+    width: 720px;
   }
 `;
 

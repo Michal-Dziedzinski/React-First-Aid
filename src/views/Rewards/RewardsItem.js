@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledItemGrabs = styled.p`
-  font-size: 14px;
+  font-size: 1.4rem;
   color: ${({ theme }) => theme.colorMain};
 `;
 const StyledItem = styled.div`
@@ -31,7 +31,7 @@ const StyledImageWrapper = styled.div`
 `;
 
 const StyledItemName = styled.p`
-  font-size: 14px;
+  font-size: 1.4rem;
   color: ${({ theme }) => theme.colorPrimary};
 `;
 const StyledItemHeader = styled.div`
@@ -41,7 +41,7 @@ const StyledItemHeader = styled.div`
   padding-bottom: 10px;
 `;
 const StyledItemInfo = styled.p`
-  font-size: 12px;
+  font-size: 1.2rem;
   justify-content: space-between;
 `;
 const StyledItemText = styled.div`

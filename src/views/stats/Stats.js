@@ -15,7 +15,7 @@ const StyledLink = styled.span`
   text-decoration: none;
   text-transform: uppercase;
   color: ${({ theme }) => theme.colorPrimary};
-  font-size: 14px;
+  font-size: 1.4rem;
 
   &.active {
     color: ${({ theme }) => theme.colorMain};
@@ -36,7 +36,7 @@ const StyledRow = styled.div`
   /* align-items: center; */
 
   padding: 10px;
-  font-size: 12px;
+  font-size: 1.2rem;
   width: 100%;
   color: ${({ theme }) => theme.colorWhite};
 
@@ -94,7 +94,7 @@ const StyledPanel = styled.div`
 const StyledPanelText = styled.p`
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 1.4rem;
   color: ${({ theme }) => theme.colorPrimary};
 `;
 

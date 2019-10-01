@@ -24,11 +24,11 @@ const StyledDescription = styled.div`
 `;
 
 const StyledDescriptionTextBig = styled.p`
-  font-size: 18px;
+  font-size: 1.8rem;
 `;
 
 const StyledDescriptionTextSmall = styled.p`
-  font-size: 14px;
+  font-size: 1.4rem;
 `;
 const StyledPlaceholder = styled.div`
   position: relative;
