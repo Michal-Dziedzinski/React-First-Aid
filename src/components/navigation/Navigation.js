@@ -7,13 +7,16 @@ const StyledNav = styled.ul`
   list-style: none;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 25px 55px 25px;
+  padding: 1.5rem 2.5rem;
   position: relative;
   z-index: 3;
   position: fixed;
-  top: 54px;
+  top: 5.4rem;
   width: 100%;
   background-color: #fff;
+  @media only screen and (min-width: 768px) {
+    justify-content: space-around;
+  }
 `;
 
 const Navigation = () => {

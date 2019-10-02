@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import { RewardsItem } from 'views/Rewards/RewardsItem';
 
 const StyledList = styled.div`
-  width: calc(100% - 40px);
-  margin: 0 20px 20px 20px;
-  border-bottom: 1px solid ${({ theme }) => theme.colorPrimary};
+  width: calc(100% - 4rem);
+  margin: 0 2rem 2rem 2rem;
+  border-bottom: 0.1rem solid ${({ theme }) => theme.colorPrimary};
 `;
 
 const StyledInfo = styled.p`
-  margin-top: 20px;
-  margin-bottom: 162px;
+  margin-top: 2rem;
+  margin-bottom: 26.2rem;
   color: ${({ theme }) => theme.colorPrimary};
-  font-size: 24px;
+  font-size: 2.4rem;
 `;
 
 export const RewardsList = ({ rewards, setChosenReward, chosenReward }) => (

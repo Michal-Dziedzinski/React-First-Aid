@@ -7,7 +7,7 @@ const StyledResult = styled.p`
   color: ${({ theme }) => theme.colorPrimary};
   font-weight: 700;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   font-size: 1.4rem;
 `;
 
@@ -16,7 +16,7 @@ const StyledText = styled.p`
   color: ${({ theme }) => theme.colorPrimary};
   font-weight: 700;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   font-size: 1.4rem;
 `;
 

@@ -9,15 +9,18 @@ const StyledLink = styled(NavLink)`
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1;
-  padding-bottom: 2px;
   position: relative;
+  padding-bottom: 0.2rem;
+  @media only screen and (min-width: 768px) {
+    justify-content: space-around;
+  }
   &::after {
     content: '';
     position: absolute;
     /* width: 0; */
-    height: 3px;
+    height: 0.3rem;
     display: block;
-    margin-top: 5px;
+    margin-top: 0.5rem;
     right: 0;
     background: red;
     transition: transform 0.3s ease;

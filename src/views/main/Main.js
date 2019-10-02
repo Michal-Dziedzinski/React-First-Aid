@@ -3,30 +3,37 @@ import styled from 'styled-components';
 import { Button } from 'components/button/Button';
 import { NavLink } from 'react-router-dom';
 
-const Title = styled.h1`
+const StyledTitle = styled.h1`
   font-family: 'Karla', sans-serif;
   color: ${({ theme }) => theme.colorPrimary};
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
 `;
 const StyledRewardName = styled.h2`
   font-family: 'Karla', sans-serif;
   color: ${({ theme }) => theme.colorPrimary};
   text-align: center;
-  font-size: 22px;
-  padding: 10px 0;
+  font-size: 2.2rem;
+  padding: 1rem 0;
 `;
 
 const StyledContainer = styled.div`
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 40px;
+  padding: 2rem 1.5rem 10rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media only screen and (min-width: 768px) {
+    padding-top: 4rem;
+  }
 `;
 const StyledLink = styled(NavLink)`
   width: 100%;
@@ -35,26 +42,29 @@ const StyledLink = styled(NavLink)`
 
 const StyledProduct = styled.div`
   position: relative;
-  padding-top: 20px;
+  padding-top: 2rem;
 `;
 
 const StyledProductImg = styled.img`
   display: block;
   width: auto;
-  max-height: 260px;
+  max-height: 26rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
+  @media only screen and (min-width: 768px) {
+    max-width: 72rem;
+  }
 `;
 
 const StyledDiscount = styled.span`
-  width: 65px;
-  height: 65px;
+  width: 6.5rem;
+  height: 6.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: -25px;
+  top: -2.5rem;
   right: 0;
   color: ${({ theme }) => theme.colorPrimary};
   background-color: ${({ theme }) => theme.colorMain};
@@ -66,29 +76,32 @@ const StyledDiscount = styled.span`
 
 const StyledProgressBar = styled.div`
   width: 100%;
-  height: 30px;
-  padding: 3px;
-  border: 2px solid ${({ theme }) => theme.colorPrimary};
-  border-radius: 15px;
+  height: 3rem;
+  padding: 0.3rem;
+  border: 0.2rem solid ${({ theme }) => theme.colorPrimary};
+  border-radius: 1.5rem;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   transition: transform 1s;
   &:after {
     display: block;
     content: '';
     position: absolute;
-    height: 20px;
-    left: 4px;
-    top: 3px;
+    height: 2rem;
+    left: 0.4rem;
+    top: 0.3rem;
     width: 98%;
     background: linear-gradient(
       to right,
       ${({ theme }) => theme.colorPrimary},
       ${({ theme }) => theme.colorMain}
     );
-    border-radius: 15px;
+    border-radius: 1.5rem;
     transform-origin: left;
     transform: scaleX(${({ points, price }) => points / price});
+  }
+  @media only screen and (min-width: 768px) {
+    width: 72rem;
   }
 `;
 
@@ -107,7 +120,7 @@ const Main = props => {
       {reward ? (
         <>
           {' '}
-          <Title>YOUR MOST WANTED REWARD PROGRESS</Title>
+          <StyledTitle>Your most wanted reward progress</StyledTitle>
           <StyledProduct>
             <StyledProductImg src={require(`assets/${reward.image}.png`)} />
             <StyledDiscount>{reward.reward}</StyledDiscount>
@@ -124,7 +137,7 @@ const Main = props => {
         </>
       ) : (
         <>
-          <Title>Choose the reward you want to get!</Title>
+          <StyledTitle>Choose the reward you want to get!</StyledTitle>
           <StyledLink to="/rewards">
             <Button>Chose Your reward</Button>
           </StyledLink>
