@@ -14,7 +14,7 @@ import Stats from 'views/stats/Stats';
 import { Maps } from 'views/maps/Maps';
 
 const Wrapper = styled.div`
-  margin-top: 102px;
+  margin-top: 10.2rem;
 `;
 
 class Root extends Component {

@@ -8,21 +8,21 @@ const StyledItemGrabs = styled.p`
 const StyledItem = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.colorWhite};
-  padding: 10px 10px 10px 0;
-  border-top: 1px solid ${({ theme }) => theme.colorPrimary};
+  padding: 1rem 1rem 1rem 0;
+  border-top: 0.1rem solid ${({ theme }) => theme.colorPrimary};
 `;
 const StyledItemActive = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.colorMain};
   color: ${({ theme }) => theme.colorPrimary};
-  padding: 10px;
-  border-top: 1px solid ${({ theme }) => theme.colorPrimary};
+  padding: 1rem;
+  border-top: 0.1rem solid ${({ theme }) => theme.colorPrimary};
   ${StyledItemGrabs} {
     color: ${({ theme }) => theme.colorWhite};
   }
 `;
 const StyledImage = styled.img`
-  height: 50px;
+  height: 5rem;
 `;
 const StyledImageWrapper = styled.div`
   width: 30%;
@@ -38,7 +38,7 @@ const StyledItemHeader = styled.div`
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 `;
 const StyledItemInfo = styled.p`
   font-size: 1.2rem;

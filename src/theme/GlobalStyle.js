@@ -30,8 +30,6 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Manjari', sans-serif;
         background-color: #ffffff;
         padding-top: 0;
-        padding-bottom: 15px;
-        padding-bottom: 100px;
     }
 `;
 

@@ -18,9 +18,9 @@ const StyledLink = styled(NavLink)`
     content: '';
     position: absolute;
     /* width: 0; */
-    height: 3px;
+    height: 0.3rem;
     display: block;
-    margin-top: 5px;
+    margin-top: 0.5rem;
     right: 0;
     background: red;
     transition: transform 0.3s ease;

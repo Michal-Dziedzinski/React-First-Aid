@@ -21,23 +21,23 @@ const Text = styled.p`
 `;
 
 const Button = styled.div`
-  width: 20px;
-  height: 10px;
+  width: 2rem;
+  height: 1rem;
   &:hover {
     cursor: pointer;
   }
 `;
 
 const Line1 = styled.div`
-  width: 16px;
-  height: 2px;
+  width: 1.6rem;
+  height: 0.2rem;
   background-color: ${({ theme }) => theme.colorWhite};
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 `;
 
 const Line2 = styled.div`
-  width: 20px;
-  height: 2px;
+  width: 2rem;
+  height: 0.2rem;
   background-color: ${({ theme }) => theme.colorWhite};
 `;
 

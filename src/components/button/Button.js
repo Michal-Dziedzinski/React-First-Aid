@@ -10,9 +10,9 @@ const StyleButton = styled.button`
   color: ${({ theme }) => theme.colorWhite};
   border: none;
   width: 80%;
-  border-radius: 25px;
-  padding: 20px 0;
-  margin: 10px 0;
+  border-radius: 2.5rem;
+  padding: 2rem 0;
+  margin: 1rem 0;
   text-transform: uppercase;
   font-family: inherit;
   font-size: 1.8rem;
