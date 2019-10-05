@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 3;
 `;
 
 const Text = styled.p`
@@ -41,7 +42,7 @@ const Line2 = styled.div`
   background-color: ${({ theme }) => theme.colorWhite};
 `;
 
-const TopBar = props => {
+export const TopBar = props => {
   const { points } = props;
   return (
     <Wrapper>
@@ -53,5 +54,3 @@ const TopBar = props => {
     </Wrapper>
   );
 };
-
-export default TopBar;

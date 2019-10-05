@@ -12,8 +12,6 @@ const StyledBackground = styled.div`
   background-image: linear-gradient(to bottom, #f3f3f3, #ffffff);
 `;
 
-const Background = () => {
+export const Background = () => {
   return <StyledBackground />;
 };
-
-export default Background;
