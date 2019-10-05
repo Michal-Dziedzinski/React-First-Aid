@@ -31,11 +31,16 @@ const StyledSwitch = styled.span`
   color: ${({ theme }) => theme.colorPrimary};
   font-size: 1.4rem;
   cursor: pointer;
+  margin-right: 5px;
 
   &.active {
     color: ${({ theme }) => theme.colorMain};
     font-weight: bold;
   }
+`;
+
+const StyledSwitchContainer = styled.div`
+  margin: 1rem 0;
 `;
 
 const StyledRatingWrapper = styled.div`
@@ -277,13 +282,15 @@ export class Stats extends Component {
     return (
       <StyledWrapper>
         <StyledTitle>Your statistics</StyledTitle>
-        <StyledSwitch className={isLocal ? '' : 'active'} onClick={() => this.setIsLocal(false)}>
-          Global
-        </StyledSwitch>
-        /{' '}
-        <StyledSwitch className={isLocal ? 'active' : ''} onClick={() => this.setIsLocal(true)}>
-          Lokal
-        </StyledSwitch>
+        <StyledSwitchContainer>
+          <StyledSwitch className={isLocal ? '' : 'active'} onClick={() => this.setIsLocal(false)}>
+            Global
+          </StyledSwitch>
+          /{' '}
+          <StyledSwitch className={isLocal ? 'active' : ''} onClick={() => this.setIsLocal(true)}>
+            Lokal
+          </StyledSwitch>
+        </StyledSwitchContainer>
         <StyledRatingWrapper>
           <StyledRow>
             <StyledCol>Name</StyledCol>

@@ -118,6 +118,7 @@ export class Root extends Component {
               <Navigation />
               <Switch>
                 <Route path="/scan" render={() => <Scan addGrabbs={this.addGrabbs} />} />
+                {/* <Route path="/login" render={() => <Login />} /> */}
                 <Route
                   exact
                   path="/"
