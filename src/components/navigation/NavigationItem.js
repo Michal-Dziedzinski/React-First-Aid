@@ -36,7 +36,7 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-const NavigationItem = props => {
+export const NavigationItem = props => {
   const { name, link } = props;
   return (
     <li>
@@ -46,5 +46,3 @@ const NavigationItem = props => {
     </li>
   );
 };
-
-export default NavigationItem;

@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
-import GlobalStyle from 'theme/GlobalStyle';
+import { GlobalStyle } from 'theme/GlobalStyle';
 import { theme } from 'theme/MainTheme';
-import TopBar from 'components/topBar/TopBar';
-import Background from 'components/background/Background';
-import Navigation from 'components/navigation/Navigation';
-import Main from 'views/main/Main';
+import { TopBar } from 'components/topBar/TopBar';
+import { Background } from 'components/background/Background';
+import { Navigation } from 'components/navigation/Navigation';
+import { Main } from 'views/main/Main';
 import { Rewards } from 'views/Rewards/Rewards';
-import BottomBtn from 'components/bottomBtn/BottomBtn';
-import Scan from 'views/scan/Scan';
-import Stats from 'views/stats/Stats';
+import { BottomBtn } from 'components/bottomBtn/BottomBtn';
+import { Scan } from 'views/scan/Scan';
+import { Stats } from 'views/stats/Stats';
 import { Maps } from 'views/maps/Maps';
 
 const Wrapper = styled.div`
   margin-top: 10.2rem;
 `;
 
-class Root extends Component {
+export class Root extends Component {
   state = {
     points: 15,
     favoriteReward: null,
@@ -144,5 +144,3 @@ class Root extends Component {
     );
   }
 }
-
-export default Root;

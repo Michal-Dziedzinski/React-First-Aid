@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Manjari:400,700&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 
@@ -32,5 +32,3 @@ const GlobalStyle = createGlobalStyle`
         padding-top: 0;
     }
 `;
-
-export default GlobalStyle;

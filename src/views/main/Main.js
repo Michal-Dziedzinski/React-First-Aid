@@ -113,7 +113,7 @@ const StyledPoints = styled.p`
   color: ${({ theme }) => theme.colorPrimary};
 `;
 
-const Main = props => {
+export const Main = props => {
   const { points, reward } = props;
   return (
     <StyledContainer>
@@ -146,5 +146,3 @@ const Main = props => {
     </StyledContainer>
   );
 };
-
-export default Main;

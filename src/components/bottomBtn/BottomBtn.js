@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   bottom: 0;
   right: 0;
   width: 100%;
+  z-index: 5;
   @media only screen and (min-width: 768px) {
     width: auto;
   }
@@ -30,7 +31,7 @@ const LogoDark = styled.img`
   width: 3.2rem;
 `;
 
-const BottomBtn = () => {
+export const BottomBtn = () => {
   return (
     <Wrapper>
       <Text>Scan!</Text>
@@ -38,5 +39,3 @@ const BottomBtn = () => {
     </Wrapper>
   );
 };
-
-export default BottomBtn;

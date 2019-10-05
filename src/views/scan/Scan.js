@@ -20,7 +20,7 @@ const StyledText = styled.p`
   font-size: 1.4rem;
 `;
 
-class Scan extends Component {
+export class Scan extends Component {
   state = {
     result: 0,
   };
@@ -58,5 +58,3 @@ class Scan extends Component {
     );
   }
 }
-
-export default Scan;
