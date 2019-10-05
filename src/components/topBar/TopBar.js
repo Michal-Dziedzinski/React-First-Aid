@@ -46,7 +46,7 @@ export const TopBar = props => {
   const { points } = props;
   return (
     <Wrapper>
-      <Text>{points} GRABS</Text>
+      <Text>{points} GRABBS</Text>
       <Button>
         <Line1 />
         <Line2 />
