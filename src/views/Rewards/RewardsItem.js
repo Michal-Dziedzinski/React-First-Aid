@@ -61,7 +61,7 @@ export const RewardsItem = ({ reward, chosenReward, setChosenReward }) =>
           <StyledItemName>
             {reward.reward} {reward.name}
           </StyledItemName>
-          <StyledItemGrabs>{reward.price} GRABS</StyledItemGrabs>
+          <StyledItemGrabs>{reward.price} GRABBS</StyledItemGrabs>
         </StyledItemHeader>
         <StyledItemInfo />
         <StyledItemInfo>{reward.partner}</StyledItemInfo>
@@ -80,7 +80,7 @@ export const RewardsItem = ({ reward, chosenReward, setChosenReward }) =>
           <StyledItemName>
             {reward.reward} {reward.name}
           </StyledItemName>
-          <StyledItemGrabs>{reward.price} GRABS</StyledItemGrabs>
+          <StyledItemGrabs>{reward.price} GRABBS</StyledItemGrabs>
         </StyledItemHeader>
         <StyledItemInfo />
         <StyledItemInfo>{reward.partner}</StyledItemInfo>

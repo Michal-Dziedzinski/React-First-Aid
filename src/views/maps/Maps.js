@@ -58,7 +58,7 @@ export const Maps = () => (
     <StyledMap />
     <StyledDescription>
       <StyledDescriptionTextBig>Białostocka 11, Białystok</StyledDescriptionTextBig>
-      <StyledDescriptionTextSmall>Total grabs: 6231</StyledDescriptionTextSmall>
+      <StyledDescriptionTextSmall>Total grabbs: 6231</StyledDescriptionTextSmall>
     </StyledDescription>
   </StyledPlaceholder>
 );
