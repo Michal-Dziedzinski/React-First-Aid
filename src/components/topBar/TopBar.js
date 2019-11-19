@@ -3,10 +3,14 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colorPrimary};
-  padding: 20px 15px;
+  padding: 2rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
 `;
 
 const Text = styled.p`
@@ -18,31 +22,31 @@ const Text = styled.p`
 `;
 
 const Button = styled.div`
-  width: 20px;
-  height: 10px;
+  width: 2rem;
+  height: 1rem;
   &:hover {
     cursor: pointer;
   }
 `;
 
 const Line1 = styled.div`
-  width: 16px;
-  height: 2px;
+  width: 1.6rem;
+  height: 0.2rem;
   background-color: ${({ theme }) => theme.colorWhite};
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 `;
 
 const Line2 = styled.div`
-  width: 20px;
-  height: 2px;
+  width: 2rem;
+  height: 0.2rem;
   background-color: ${({ theme }) => theme.colorWhite};
 `;
 
-const TopBar = props => {
+export const TopBar = props => {
   const { points } = props;
   return (
     <Wrapper>
-      <Text>{points} GRABS</Text>
+      <Text>{points} GRABBS</Text>
       <Button>
         <Line1 />
         <Line2 />
@@ -50,5 +54,3 @@ const TopBar = props => {
     </Wrapper>
   );
 };
-
-export default TopBar;

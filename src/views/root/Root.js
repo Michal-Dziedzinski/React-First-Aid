@@ -1,51 +1,57 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from 'theme/GlobalStyle';
+import styled, { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from 'theme/GlobalStyle';
 import { theme } from 'theme/MainTheme';
-import TopBar from 'components/topBar/TopBar';
-import Background from 'components/background/Background';
-import Navigation from 'components/navigation/Navigation';
-import Main from 'views/main/Main';
+import { TopBar } from 'components/topBar/TopBar';
+import { Background } from 'components/background/Background';
+import { Navigation } from 'components/navigation/Navigation';
+import { Main } from 'views/main/Main';
 import { Rewards } from 'views/Rewards/Rewards';
-import BottomBtn from 'components/bottomBtn/BottomBtn';
-import Scan from 'views/scan/Scan';
-import Stats from 'views/stats/Stats';
+import { BottomBtn } from 'components/bottomBtn/BottomBtn';
+import { Scan } from 'views/scan/Scan';
+import { Stats } from 'views/stats/Stats';
 import { Maps } from 'views/maps/Maps';
 
-class Root extends Component {
+const Wrapper = styled.div`
+  margin-top: 10.2rem;
+`;
+
+export class Root extends Component {
   state = {
     points: 15,
-    chosenItemId: null,
-    wishItemId: null,
+    favoriteReward: null,
     rewards: [
       {
         id: 1,
-        name: 'Greek Salad -50%',
+        name: 'Greek Salad',
+        reward: '-50%',
         price: 20,
         partner: 'Kathys Restaurant',
         address: {
           city: 'Białystok',
-          street: 'Warszawska 11',
+          street: 'Kamilowa 11',
         },
         type: 'food',
         image: 'salad',
       },
       {
         id: 2,
-        name: 'Free Burger',
+        name: 'Burger',
+        reward: 'Free',
         price: 150,
         partner: 'McRoland',
         address: {
           city: 'Suchowola',
-          street: 'Szklana 16',
+          street: 'Bondara 16',
         },
         type: 'food',
         image: 'burger',
       },
       {
         id: 3,
-        name: 'Cinema ticket -20%',
+        name: 'Cinema ticket',
+        reward: '-20%',
         price: 10,
         partner: 'CinemaTown',
         address: {
@@ -58,6 +64,7 @@ class Root extends Component {
       {
         id: 4,
         name: 'Bus ticket',
+        reward: 'Free',
         price: 20,
         partner: 'MPK Białystok',
         address: {
@@ -69,7 +76,8 @@ class Root extends Component {
       },
       {
         id: 5,
-        name: 'Barber -50%',
+        name: 'Barber',
+        reward: '-50%',
         price: 20,
         partner: 'Barber sp. z o.o.',
         address: {
@@ -90,26 +98,20 @@ class Root extends Component {
     });
   };
 
-  setChosenItemId = id => {
+  setFavoriteReward = reward => {
     this.setState({
-      chosenItemId: id,
-    });
-  };
-
-  setWishItemId = id => {
-    this.setState({
-      wishItemId: id,
+      favoriteReward: reward,
     });
   };
 
   render() {
-    const { points, rewards, chosenItemId, wishItemId } = this.state;
+    const { points, rewards, favoriteReward } = this.state;
     const progress = ((points * 1) / rewards) * 1;
     return (
       <div className="Root">
         <GlobalStyle />
         <ThemeProvider theme={theme}>
-          <>
+          <Wrapper>
             <TopBar points={points} />
             <Background />
             <BrowserRouter>
@@ -119,18 +121,14 @@ class Root extends Component {
                 <Route
                   exact
                   path="/"
-                  render={() => <Main points={points} price="20" progress={progress} />}
+                  render={() => (
+                    <Main points={points} reward={favoriteReward} progress={progress} />
+                  )}
                 />
                 <Route
                   path="/rewards"
                   render={() => (
-                    <Rewards
-                      rewards={rewards}
-                      chosenItemId={chosenItemId}
-                      wishItemId={wishItemId}
-                      setChosenItemId={this.chosenItemId}
-                      setWishItemId={this.wishItemId}
-                    />
+                    <Rewards rewards={rewards} setFavoriteReward={this.setFavoriteReward} />
                   )}
                 />
                 <Route path="/stats" component={Stats} />
@@ -140,11 +138,9 @@ class Root extends Component {
                 <BottomBtn />
               </NavLink>
             </BrowserRouter>
-          </>
+          </Wrapper>
         </ThemeProvider>
       </div>
     );
   }
 }
-
-export default Root;

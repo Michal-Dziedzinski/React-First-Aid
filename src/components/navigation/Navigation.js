@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationItem from 'components/navigation/NavigationItem';
+import { NavigationItem } from 'components/navigation/NavigationItem';
 import styled from 'styled-components';
 
 const StyledNav = styled.ul`
@@ -7,12 +7,19 @@ const StyledNav = styled.ul`
   list-style: none;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 25px;
+  padding: 1.5rem 2.5rem;
   position: relative;
   z-index: 3;
+  position: fixed;
+  top: 5.4rem;
+  width: 100%;
+  background-color: #fff;
+  @media only screen and (min-width: 768px) {
+    justify-content: space-around;
+  }
 `;
 
-const Navigation = () => {
+export const Navigation = () => {
   return (
     <nav>
       <StyledNav>
@@ -24,5 +31,3 @@ const Navigation = () => {
     </nav>
   );
 };
-
-export default Navigation;

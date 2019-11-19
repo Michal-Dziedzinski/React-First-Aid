@@ -2,29 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledItemGrabs = styled.p`
-  font-size: 14px;
+  font-size: 1.4rem;
   color: ${({ theme }) => theme.colorMain};
 `;
 const StyledItem = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.colorWhite};
-  padding: 10px 10px 10px 0;
-  border-top: 1px solid ${({ theme }) => theme.colorPrimary};
-  margin: 0 20px;
+  padding: 1rem 1rem 1rem 0;
+  border-top: 0.1rem solid ${({ theme }) => theme.colorPrimary};
 `;
 const StyledItemActive = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.colorMain};
   color: ${({ theme }) => theme.colorPrimary};
-  padding: 10px;
-  border-top: 1px solid ${({ theme }) => theme.colorPrimary};
-  margin: 0 20px;
+  padding: 1rem;
+  border-top: 0.1rem solid ${({ theme }) => theme.colorPrimary};
   ${StyledItemGrabs} {
     color: ${({ theme }) => theme.colorWhite};
   }
 `;
 const StyledImage = styled.img`
-  height: 50px;
+  height: 5rem;
 `;
 const StyledImageWrapper = styled.div`
   width: 30%;
@@ -33,17 +31,17 @@ const StyledImageWrapper = styled.div`
 `;
 
 const StyledItemName = styled.p`
-  font-size: 14px;
+  font-size: 1.4rem;
   color: ${({ theme }) => theme.colorPrimary};
 `;
 const StyledItemHeader = styled.div`
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 `;
 const StyledItemInfo = styled.p`
-  font-size: 12px;
+  font-size: 1.2rem;
   justify-content: space-between;
 `;
 const StyledItemText = styled.div`
@@ -52,16 +50,18 @@ const StyledItemText = styled.div`
   width: 70%;
 `;
 
-export const RewardsItem = ({ reward, isActive }) =>
-  isActive ? (
+export const RewardsItem = ({ reward, chosenReward, setChosenReward }) =>
+  reward.id === (chosenReward ? chosenReward.id : undefined) ? (
     <StyledItemActive>
       <StyledImageWrapper>
         <StyledImage src={require(`assets/${reward.image}.png`)} alt={reward.partner} />
       </StyledImageWrapper>
       <StyledItemText>
         <StyledItemHeader>
-          <StyledItemName>{reward.name}</StyledItemName>
-          <StyledItemGrabs>{reward.price} GRABS</StyledItemGrabs>
+          <StyledItemName>
+            {reward.reward} {reward.name}
+          </StyledItemName>
+          <StyledItemGrabs>{reward.price} GRABBS</StyledItemGrabs>
         </StyledItemHeader>
         <StyledItemInfo />
         <StyledItemInfo>{reward.partner}</StyledItemInfo>
@@ -71,14 +71,16 @@ export const RewardsItem = ({ reward, isActive }) =>
       </StyledItemText>
     </StyledItemActive>
   ) : (
-    <StyledItem>
+    <StyledItem onClick={() => setChosenReward(reward)}>
       <StyledImageWrapper>
         <StyledImage src={require(`assets/${reward.image}.png`)} alt={reward.partner} />
       </StyledImageWrapper>
       <StyledItemText>
         <StyledItemHeader>
-          <StyledItemName>{reward.name}</StyledItemName>
-          <StyledItemGrabs>{reward.price} GRABS</StyledItemGrabs>
+          <StyledItemName>
+            {reward.reward} {reward.name}
+          </StyledItemName>
+          <StyledItemGrabs>{reward.price} GRABBS</StyledItemGrabs>
         </StyledItemHeader>
         <StyledItemInfo />
         <StyledItemInfo>{reward.partner}</StyledItemInfo>

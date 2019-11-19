@@ -7,7 +7,7 @@ const StyledResult = styled.p`
   color: ${({ theme }) => theme.colorPrimary};
   font-weight: 700;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   font-size: 1.4rem;
 `;
 
@@ -16,11 +16,11 @@ const StyledText = styled.p`
   color: ${({ theme }) => theme.colorPrimary};
   font-weight: 700;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   font-size: 1.4rem;
 `;
 
-class Scan extends Component {
+export class Scan extends Component {
   state = {
     result: 0,
   };
@@ -58,5 +58,3 @@ class Scan extends Component {
     );
   }
 }
-
-export default Scan;
