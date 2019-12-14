@@ -8,13 +8,15 @@ The grabber application was created as our idea during the **HackYeah 2019** Hac
 
 You can read more about our application in the presentation we have prepared [here](https://drive.google.com/file/d/1X7DognJLUNI5g0sQ2Xv_ekAPcIa4FYbB/view?usp=sharing)
 
+[<img src="https://drive.google.com/uc?export=view&id=10JVEWdInUFw7easNU3_tqgPEO93prO-o" alt="grabber">](https://drive.google.com/file/d/1X7DognJLUNI5g0sQ2Xv_ekAPcIa4FYbB/view?usp=sharing)
+
 In [this](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing) video you can see how John, Katie and all other people can benefit from using the Grabber app:
 
-[<img src="https://drive.google.com/uc?export=view&id=1sjKrZyMiANmW3XSufcr9v9g_LE6aPaOe" alt="grabber">](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing)
+[<img src="https://drive.google.com/uc?export=view&id=198W-obdIOqmwdXP_nN9oZ3YUHvCAwybI" alt="grabber">](https://drive.google.com/file/d/1_lRWjeKik6ncd8hXdWeJf0LplpyEv5gA/view?usp=sharing)
 
 ## How can I check the idea?
 
-[Here](https://xenodochial-bassi-8f6219.netlify.com/) is the link to the application. **Important!** The application is at a very early stage of development, currently it is rather a mock-up. **Only the mobile view has been prepared!**
+[Here](https://xenodochial-bassi-8f6219.netlify.com/) is the link to the application. **Important!** The application is at a very early stage of development, currently it is rather a mock-up.
 
 <img src="https://drive.google.com/uc?export=view&id=1LOUzCB46SyEvXsGsKepPRlj9dTDWrchJ" alt="Grabber app"/>
 
